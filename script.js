@@ -40,7 +40,7 @@
             const galleryFilters = ["All", "Food & Beverages", "Real Estate", "Portraits", "Products", "Events"];
 
             const galleryItems = [
-                // Food & Beverages (Updated with correct encoded folder path & exact filenames)
+                // Food & Beverages
                 { title: "Culinary Art", category: "Food & Beverages", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/296ebc17-03df-4478-984e-1f42770014b7_rw_1200.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/296ebc17-03df-4478-984e-1f42770014b7_rw_1200.jpg" },
                 { title: "Artisan Brew", category: "Food & Beverages", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/57e94b7e-9531-42d4-8919-428fc4ff77b4_rw_1200.png", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/57e94b7e-9531-42d4-8919-428fc4ff77b4_rw_1200.png" },
                 { title: "Gastronomy Dish", category: "Food & Beverages", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/8bfcbef0-b1a4-4e51-8ca9-a84a5ead5df2_rw_1200.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/8bfcbef0-b1a4-4e51-8ca9-a84a5ead5df2_rw_1200.jpg" },
@@ -122,13 +122,12 @@
                 { label: "Contact", href: "#contact" }
             ];
 
-           const socialLinks = [
-    { label: "Instagram", href: "https://www.instagram.com/midascreativegrp?exln=YzJkZjB3a3Ywd3Q2.", icon: "fab fa-instagram" },
-    { label: "Behance", href: "#", icon: "fab fa-behance" },
-    { label: "Pinterest", href: "#", icon: "fab fa-pinterest" },
-    { label: "Vimeo", href: "#", icon: "fab fa-vimeo-v" }
-];
-            
+            const socialLinks = [
+                { label: "Instagram", href: "https://www.instagram.com/midascreativegrp?exln=YzJkZjB3a3Ywd3Q2.", icon: "fab fa-instagram" },
+                { label: "Behance", href: "#", icon: "fab fa-behance" },
+                { label: "Pinterest", href: "#", icon: "fab fa-pinterest" },
+                { label: "Vimeo", href: "#", icon: "fab fa-vimeo-v" }
+            ];
 
             // ============ HERO ROTATING BACKGROUND SETUP ============
             function initHeroSlideshow(items) {
@@ -423,8 +422,7 @@
                 const mobileMenu = document.getElementById("mobile-menu");
                 if (!mobileMenu) return;
 
-                mobileMenu.classList.remove("pointer-events-none", "opacity-0");
-                mobileMenu.classList.add("pointer-events-auto", "opacity-100");
+                mobileMenu.classList.add("open");
                 document.body.style.overflow = "hidden";
 
                 const navItems = mobileMenu.querySelectorAll(".mobile-nav-item");
@@ -447,8 +445,7 @@
                 });
 
                 setTimeout(function () {
-                    mobileMenu.classList.add("pointer-events-none", "opacity-0");
-                    mobileMenu.classList.remove("pointer-events-auto", "opacity-100");
+                    mobileMenu.classList.remove("open");
                     document.body.style.overflow = "";
                 }, 200);
             }
@@ -550,6 +547,13 @@
 
             // ============ EVENT DELEGATION ============
             document.addEventListener("click", function (e) {
+                var menuBtn = e.target.closest("#menu-btn");
+                if (menuBtn) {
+                    e.preventDefault();
+                    openMobileMenu();
+                    return;
+                }
+
                 if (e.target.closest("#mobile-close-btn")) {
                     closeMobileMenu();
                     return;
@@ -588,12 +592,6 @@
                         if (i === dataIndex) pos = visible.indexOf(item);
                     });
                     if (pos !== -1) openLightbox(pos, visible);
-                    return;
-                }
-
-                var menuBtn = e.target.closest("#menu-btn");
-                if (menuBtn) {
-                    openMobileMenu();
                     return;
                 }
 
