@@ -16,7 +16,7 @@
                     category: "Real Estate",
                     year: "2025",
                     description: "Capturing the clean lines, light play, and sophisticated atmosphere of modern spaces.",
-                    image: "https://picsum.photos/1400/1000?random=101",
+                    image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Real%20Estate/245ce99d-121f-4232-9f5d-481e9f9b2633_rw_600.jpg",
                     span: "md:col-span-2 md:row-span-2"
                 },
                 {
@@ -24,7 +24,7 @@
                     category: "Products",
                     year: "2025",
                     description: "High-end commercial product styling designed to elevate brand narratives.",
-                    image: "https://picsum.photos/800/600?random=102",
+                    image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/07827590-7c41-4b46-8e39-c56a041b9cd1_rw_600.jpg",
                     span: ""
                 },
                 {
@@ -32,7 +32,7 @@
                     category: "Events",
                     year: "2025",
                     description: "Timeless documentary coverage preserving the energy and intimacy of milestone gatherings.",
-                    image: "https://picsum.photos/800/600?random=103",
+                    image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/2ecadd8c-1ed3-428d-89cc-c86ce86ce5bc_rw_600.png",
                     span: ""
                 }
             ];
@@ -40,26 +40,57 @@
             const galleryFilters = ["All", "Food & Beverages", "Real Estate", "Portraits", "Products", "Events"];
 
             const galleryItems = [
-                { title: "Culinary Art", category: "Food & Beverages", image: "https://picsum.photos/900/1200?random=201", full: "https://picsum.photos/1600/2000?random=201" },
-                { title: "Modern Interior", category: "Real Estate", image: "https://picsum.photos/900/1200?random=202", full: "https://picsum.photos/1600/2000?random=202" },
-                { title: "Studio Muse", category: "Portraits", image: "https://picsum.photos/900/1200?random=203", full: "https://picsum.photos/1600/2000?random=203" },
-                { title: "Luxe Bottle", category: "Products", image: "https://picsum.photos/900/1200?random=204", full: "https://picsum.photos/1600/2000?random=204" },
-                { title: "Golden Reception", category: "Events", image: "https://i.imgur.com/FV2tAvK.png", full: "https://i.imgur.com/FV2tAvK.png" },
-                { title: "Artisan Brew", category: "Food & Beverages", image: "https://picsum.photos/900/1200?random=206", full: "https://picsum.photos/1600/2000?random=206" },
-                { title: "Penthouse View", category: "Real Estate", image: "https://picsum.photos/900/1200?random=207", full: "https://picsum.photos/1600/2000?random=207" },
-                { title: "Candid Frame", category: "Portraits", image: "https://picsum.photos/900/1200?random=208", full: "https://picsum.photos/1600/2000?random=208" },
-                { title: "Minimalist Flacon", category: "Products", image: "https://picsum.photos/900/1200?random=209", full: "https://picsum.photos/1600/2000?random=209" },
-                { title: "Gala Night", category: "Events", image: "https://i.imgur.com/FV2tAvK.png", full: "https://i.imgur.com/FV2tAvK.png" },
-                { title: "Gastronomy Dish", category: "Food & Beverages", image: "https://picsum.photos/900/1200?random=211", full: "https://picsum.photos/1600/2000?random=211" },
-                { title: "Executive Suite", category: "Real Estate", image: "https://picsum.photos/900/1200?random=212", full: "https://picsum.photos/1600/2000?random=212" },
-                { title: "Celebration Moment", category: "Events", image: "https://i.imgur.com/XaoJNb6.png", full: "https://i.imgur.com/XaoJNb6.png" },
-                { title: "Live Gathering", category: "Events", image: "https://i.imgur.com/5h8OSBF.png", full: "https://i.imgur.com/5h8OSBF.png" },
-                { title: "Milestone Evening", category: "Events", image: "https://i.imgur.com/VvaUrGf.png", full: "https://i.imgur.com/VvaUrGf.png" },
-                { title: "Stage & Spotlight", category: "Events", image: "https://i.imgur.com/VMIeMfo.png", full: "https://i.imgur.com/VMIeMfo.png" },
-                { title: "Corporate Reception", category: "Events", image: "https://i.imgur.com/6ZvmqiI.png", full: "https://i.imgur.com/6ZvmqiI.png" },
-                { title: "Dynamic Social", category: "Events", image: "https://i.imgur.com/QbD2UaF.png", full: "https://i.imgur.com/QbD2UaF.png" },
-                { title: "Evening Celebration", category: "Events", image: "https://i.imgur.com/mpQH3VK.png", full: "https://i.imgur.com/mpQH3VK.png" },
-                { title: "Festive Atmosphere", category: "Events", image: "https://i.imgur.com/zoE3Hsc.png", full: "https://i.imgur.com/zoE3Hsc.png" }
+                // Food & Beverages (Updated with correct encoded folder path & exact filenames)
+                { title: "Culinary Art", category: "Food & Beverages", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/296ebc17-03df-4478-984e-1f42770014b7_rw_1200.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/296ebc17-03df-4478-984e-1f42770014b7_rw_1200.jpg" },
+                { title: "Artisan Brew", category: "Food & Beverages", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/57e94b7e-9531-42d4-8919-428fc4ff77b4_rw_1200.png", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/57e94b7e-9531-42d4-8919-428fc4ff77b4_rw_1200.png" },
+                { title: "Gastronomy Dish", category: "Food & Beverages", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/8bfcbef0-b1a4-4e51-8ca9-a84a5ead5df2_rw_1200.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/8bfcbef0-b1a4-4e51-8ca9-a84a5ead5df2_rw_1200.jpg" },
+                { title: "Gourmet Selection", category: "Food & Beverages", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/954e82ad-952c-4eda-9803-4aed604e9a62_rw_1200.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/954e82ad-952c-4eda-9803-4aed604e9a62_rw_1200.jpg" },
+                { title: "Signature Dish", category: "Food & Beverages", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/c2bbe1aa-2fd2-4086-b5d3-0e9b9e8f471a_rw_1200.png", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/c2bbe1aa-2fd2-4086-b5d3-0e9b9e8f471a_rw_1200.png" },
+                { title: "Plated Perfection", category: "Food & Beverages", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/c5071c4e-2473-4734-8079-4e6f14c6ef64_rw_1200.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/c5071c4e-2473-4734-8079-4e6f14c6ef64_rw_1200.jpg" },
+                { title: "Fine Dining", category: "Food & Beverages", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/db51166b-a973-4209-842b-358e06cd63d6_rw_1200.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/db51166b-a973-4209-842b-358e06cd63d6_rw_1200.jpg" },
+                { title: "Culinary Presentation", category: "Food & Beverages", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/e1abbf0c-7d15-4775-8cc3-65bdb04a7b5e_rw_1200.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Food%20%26%20Beverages/e1abbf0c-7d15-4775-8cc3-65bdb04a7b5e_rw_1200.jpg" },
+
+                // Real Estate
+                { title: "Modern Villa Interior", category: "Real Estate", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Real%20Estate/245ce99d-121f-4232-9f5d-481e9f9b2633_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Real%20Estate/245ce99d-121f-4232-9f5d-481e9f9b2633_rw_600.jpg" },
+                { title: "Penthouse Horizon", category: "Real Estate", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Real%20Estate/592623d0-da69-4b6f-96ef-5fb70158a6e7_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Real%20Estate/592623d0-da69-4b6f-96ef-5fb70158a6e7_rw_600.jpg" },
+                { title: "Architectural Living", category: "Real Estate", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Real%20Estate/8586578f-de5a-4764-b8f8-0c8c96d528a1_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Real%20Estate/8586578f-de5a-4764-b8f8-0c8c96d528a1_rw_600.jpg" },
+                { title: "Executive Space", category: "Real Estate", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Real%20Estate/88fa3d29-af16-4029-a77f-fe30bef468a0_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Real%20Estate/88fa3d29-af16-4029-a77f-fe30bef468a0_rw_600.jpg" },
+                { title: "Luxe Suite Elevation", category: "Real Estate", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Real%20Estate/d0ede82e-3fc8-4825-9d4a-03617d4926c4_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Real%20Estate/d0ede82e-3fc8-4825-9d4a-03617d4926c4_rw_600.jpg" },
+
+                // Portraits
+                { title: "Studio Muse", category: "Portraits", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/07e5bc37-7ae1-4ca4-a02c-7407541a6f7b_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/07e5bc37-7ae1-4ca4-a02c-7407541a6f7b_rw_600.jpg" },
+                { title: "Candid Frame", category: "Portraits", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/3da5357b-8276-43f3-b824-f609305dcecf_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/3da5357b-8276-43f3-b824-f609305dcecf_rw_600.jpg" },
+                { title: "Expressive Portrait", category: "Portraits", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/45955a6c-66b1-4797-af1c-1dc740d769b5_rw_1920.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/45955a6c-66b1-4797-af1c-1dc740d769b5_rw_1920.jpg" },
+                { title: "Natural Light Portrait", category: "Portraits", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/6f2ecdc6-da48-411c-8c85-84e97ab37a1c_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/6f2ecdc6-da48-411c-8c85-84e97ab37a1c_rw_600.jpg" },
+                { title: "Character Study", category: "Portraits", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/80727df7-b4d3-40d7-9616-a872a9a168ad_rw_1920.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/80727df7-b4d3-40d7-9616-a872a9a168ad_rw_1920.jpg" },
+                { title: "Editorial Portrait", category: "Portraits", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/93a3d889-a88a-44d1-be6e-c57545bfe3fe_rw_1920.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/93a3d889-a88a-44d1-be6e-c57545bfe3fe_rw_1920.jpg" },
+                { title: "Fine Art Portrait", category: "Portraits", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/974cfcc0-a4ed-41a4-ac3f-4d38554fb352_rw_1920.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/974cfcc0-a4ed-41a4-ac3f-4d38554fb352_rw_1920.jpg" },
+                { title: "Timeless Face", category: "Portraits", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/9815591d-1dad-486f-9ed7-f81426c96e77_rw_1920.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/9815591d-1dad-486f-9ed7-f81426c96e77_rw_1920.jpg" },
+                { title: "Cinematic Portrait", category: "Portraits", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/9d255982-9555-4a2f-8990-8514773208d8_rw_1200.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/9d255982-9555-4a2f-8990-8514773208d8_rw_1200.jpg" },
+                { title: "Monochrome Study", category: "Portraits", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/a04b489d-a796-413c-9693-e2edcb65ae9d_rw_1200.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/a04b489d-a796-413c-9693-e2edcb65ae9d_rw_1200.jpg" },
+
+                // Products
+                { title: "Commercial Asset I", category: "Products", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/07827590-7c41-4b46-8e39-c56a041b9cd1_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/07827590-7c41-4b46-8e39-c56a041b9cd1_rw_600.jpg" },
+                { title: "Commercial Asset II", category: "Products", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/1da231b3-f9e2-428e-87b9-da1f82edd433_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/1da231b3-f9e2-428e-87b9-da1f82edd433_rw_600.jpg" },
+                { title: "Commercial Asset III", category: "Products", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/32b28c44-2ffd-41f7-adde-26151cee0607_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/32b28c44-2ffd-41f7-adde-26151cee0607_rw_600.jpg" },
+                { title: "Commercial Asset IV", category: "Products", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/64d5f63c-7168-43c1-a692-5948c0410738_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/64d5f63c-7168-43c1-a692-5948c0410738_rw_600.jpg" },
+                { title: "Commercial Asset V", category: "Products", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/99db5876-05b1-4cd5-9bcb-0f98461f9a8a_rw_600.jpeg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/99db5876-05b1-4cd5-9bcb-0f98461f9a8a_rw_600.jpeg" },
+                { title: "Commercial Asset VI", category: "Products", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/b430f02e-ca2a-467c-8073-f27e3a686fad_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/b430f02e-ca2a-467c-8073-f27e3a686fad_rw_600.jpg" },
+                { title: "Commercial Asset VII", category: "Products", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/dbd4ebde-a572-4ea9-bc16-eaceadf293cd_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/dbd4ebde-a572-4ea9-bc16-eaceadf293cd_rw_600.jpg" },
+                { title: "Commercial Asset VIII", category: "Products", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/f16aead3-8521-4518-a268-2ea152c02fe5_rw_600.jpeg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/f16aead3-8521-4518-a268-2ea152c02fe5_rw_600.jpeg" },
+                { title: "Commercial Asset IX", category: "Products", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/fc20e75d-0b75-4e47-baa0-773fb19c908d_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Products/fc20e75d-0b75-4e47-baa0-773fb19c908d_rw_600.jpg" },
+
+                // Events
+                { title: "Golden Reception", category: "Events", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/2ecadd8c-1ed3-428d-89cc-c86ce86ce5bc_rw_600.png", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/2ecadd8c-1ed3-428d-89cc-c86ce86ce5bc_rw_600.png" },
+                { title: "Gala Night", category: "Events", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/307165f5-e8cf-47f3-af7a-15ff42a6a2d6_rw_600.png", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/307165f5-e8cf-47f3-af7a-15ff42a6a2d6_rw_600.png" },
+                { title: "Celebration Moment", category: "Events", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/327e6f10-2fa5-4473-8eb4-313d87c567ec_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/327e6f10-2fa5-4473-8eb4-313d87c567ec_rw_600.jpg" },
+                { title: "Live Gathering", category: "Events", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/3c5df330-b9c0-4ed6-8e45-ce3e2295352b_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/3c5df330-b9c0-4ed6-8e45-ce3e2295352b_rw_600.jpg" },
+                { title: "Milestone Evening", category: "Events", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/4c6f2f9b-0dc8-42a9-beda-f50b4f80237a_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/4c6f2f9b-0dc8-42a9-beda-f50b4f80237a_rw_600.jpg" },
+                { title: "Stage & Spotlight", category: "Events", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/51cc1bc6-fcf6-4b1e-bd7c-fe1a0efd3a99_rw_600.png", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/51cc1bc6-fcf6-4b1e-bd7c-fe1a0efd3a99_rw_600.png" },
+                { title: "Corporate Reception", category: "Events", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/7596d855-c6e5-45b5-aae6-139764271c49_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/7596d855-c6e5-45b5-aae6-139764271c49_rw_600.jpg" },
+                { title: "Dynamic Social", category: "Events", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/796007ba-2fad-41b7-a598-543eb624dfb7_rw_600.jpg", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/796007ba-2fad-41b7-a598-543eb624dfb7_rw_600.jpg" },
+                { title: "Evening Celebration", category: "Events", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/96852291-a93c-480b-85a0-fb2f2e2e3d81_rw_600.png", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/96852291-a93c-480b-85a0-fb2f2e2e3d81_rw_600.png" },
+                { title: "Festive Atmosphere", category: "Events", image: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/c6ef43ca-a56a-453f-a37e-e4657f116dad_rw_600.png", full: "https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Events/c6ef43ca-a56a-453f-a37e-e4657f116dad_rw_600.png" }
             ];
 
             const stats = [
@@ -91,12 +122,61 @@
                 { label: "Contact", href: "#contact" }
             ];
 
-            const socialLinks = [
-                { label: "Instagram", href: "#", icon: "fab fa-instagram" },
-                { label: "Behance", href: "#", icon: "fab fa-behance" },
-                { label: "Pinterest", href: "#", icon: "fab fa-pinterest" },
-                { label: "Vimeo", href: "#", icon: "fab fa-vimeo-v" }
-            ];
+           const socialLinks = [
+    { label: "Instagram", href: "https://www.instagram.com/midascreativegrp?exln=YzJkZjB3a3Ywd3Q2.", icon: "fab fa-instagram" },
+    { label: "Behance", href: "#", icon: "fab fa-behance" },
+    { label: "Pinterest", href: "#", icon: "fab fa-pinterest" },
+    { label: "Vimeo", href: "#", icon: "fab fa-vimeo-v" }
+];
+            
+
+            // ============ HERO ROTATING BACKGROUND SETUP ============
+            function initHeroSlideshow(items) {
+                let heroContainer = document.getElementById("hero") || document.querySelector("section");
+                if (!heroContainer) return;
+
+                heroContainer.style.position = "relative";
+                heroContainer.style.overflow = "hidden";
+
+                let heroImg = document.getElementById("hero-img");
+
+                if (!heroImg) {
+                    heroImg = document.createElement("div");
+                    heroImg.id = "hero-img";
+                    heroImg.style.position = "absolute";
+                    heroImg.style.inset = "0";
+                    heroImg.style.zIndex = "0";
+                    heroImg.style.backgroundSize = "cover";
+                    heroImg.style.backgroundPosition = "center";
+                    heroImg.style.transition = "opacity 1.2s ease-in-out";
+                    heroContainer.insertBefore(heroImg, heroContainer.firstChild);
+                }
+
+                const bgUrls = items.map(function(item) { return item.image; });
+                let currentIndex = 0;
+
+                function setBackground(url) {
+                    if (heroImg.tagName === "IMG") {
+                        heroImg.src = url;
+                        heroImg.style.objectFit = "cover";
+                        heroImg.style.width = "100%";
+                        heroImg.style.height = "100%";
+                    } else {
+                        heroImg.style.backgroundImage = 'linear-gradient(to bottom, rgba(0,0,0,0.65), rgba(0,0,0,0.85)), url("' + url + '")';
+                    }
+                }
+
+                setBackground(bgUrls[0]);
+
+                setInterval(function () {
+                    currentIndex = (currentIndex + 1) % bgUrls.length;
+                    heroImg.style.opacity = "0.2";
+                    setTimeout(function () {
+                        setBackground(bgUrls[currentIndex]);
+                        heroImg.style.opacity = "1";
+                    }, 600);
+                }, 4500);
+            }
 
             // ============ RENDER FUNCTIONS ============
             function renderNav(items) {
@@ -106,8 +186,14 @@
             }
 
             function renderMobileNav(items) {
-                return items.map(function (item) {
-                    return '<li><a href="' + item.href + '" class="font-display text-4xl text-white/80 hover:text-gold transition-colors duration-300">' + item.label + '</a></li>';
+                return items.map(function (item, index) {
+                    const num = String(index + 1).padStart(2, "0");
+                    return '<li class="mobile-nav-item border-b border-white/10 pb-4 opacity-0 translate-y-4 transition-all duration-500 ease-out">' +
+                        '<a href="' + item.href + '" class="flex items-center justify-between group py-1">' +
+                            '<span class="font-display text-3xl tracking-wide text-white/90 group-hover:text-gold transition-colors duration-300">' + item.label + '</span>' +
+                            '<span class="text-xs tracking-[0.25em] font-mono text-gold/70 group-hover:text-gold group-hover:translate-x-1 transition-all duration-300">' + num + ' ✦</span>' +
+                        '</a>' +
+                    '</li>';
                 }).join("");
             }
 
@@ -201,6 +287,29 @@
                 }).join("");
             }
 
+            function setupMobileOverlay() {
+                const mobileMenu = document.getElementById("mobile-menu");
+                if (!mobileMenu) return;
+
+                mobileMenu.className = "fixed inset-0 z-50 bg-black/95 backdrop-blur-xl flex flex-col justify-between p-8 md:hidden transition-all duration-500 pointer-events-none opacity-0";
+                
+                mobileMenu.innerHTML = 
+                    '<div class="flex items-center justify-between border-b border-white/10 pb-6 mb-6">' +
+                        '<div class="flex items-center gap-3">' +
+                            '<span class="h-2 w-2 rounded-full bg-gold animate-pulse"></span>' +
+                            '<span class="font-display tracking-[0.25em] uppercase text-sm text-white">MIDAS STUDIO</span>' +
+                        '</div>' +
+                        '<button id="mobile-close-btn" class="h-10 w-10 rounded-full border border-white/20 text-white/70 flex items-center justify-center hover:border-gold hover:text-gold transition-colors" aria-label="Close Navigation">' +
+                            '<i class="fas fa-times text-sm"></i>' +
+                        '</button>' +
+                    '</div>' +
+                    '<ul id="mobile-nav-list" class="flex flex-col gap-5 my-auto"></ul>' +
+                    '<div class="pt-6 border-t border-white/10 flex flex-col gap-4">' +
+                        '<p class="text-[10px] uppercase tracking-[0.3em] text-white/40">Connect & Inquire</p>' +
+                        '<div id="mobile-social" class="flex gap-3"></div>' +
+                    '</div>';
+            }
+
             // ============ STATE ============
             var activeFilter = "All";
             var lightboxItems = [];
@@ -209,6 +318,8 @@
 
             // ============ MOUNT ============
             document.body.style.overflow = "hidden";
+            setupMobileOverlay();
+            
             document.getElementById("nav-list").innerHTML = renderNav(navItems);
             document.getElementById("mobile-nav-list").innerHTML = renderMobileNav(navItems);
             document.getElementById("mobile-social").innerHTML = renderSocial(socialLinks);
@@ -223,6 +334,8 @@
             document.getElementById("footer-social").innerHTML = renderSocial(socialLinks);
             document.getElementById("footer-links").innerHTML = renderFooterLinks(footerLinks);
             document.getElementById("year").textContent = new Date().getFullYear();
+
+            initHeroSlideshow(galleryItems);
 
             applyFilter("All", true);
 
@@ -305,21 +418,39 @@
                 updateLightbox();
             }
 
-            // ============ MOBILE MENU ============
+            // ============ ANIMATED MOBILE MENU ============
             function openMobileMenu() {
-                document.getElementById("mobile-menu").classList.add("open");
-                document.getElementById("mobile-menu").setAttribute("aria-hidden", "false");
+                const mobileMenu = document.getElementById("mobile-menu");
+                if (!mobileMenu) return;
+
+                mobileMenu.classList.remove("pointer-events-none", "opacity-0");
+                mobileMenu.classList.add("pointer-events-auto", "opacity-100");
                 document.body.style.overflow = "hidden";
-                document.getElementById("menu-btn").setAttribute("aria-expanded", "true");
-                document.getElementById("menu-btn").innerHTML = '<i class="fas fa-times"></i>';
+
+                const navItems = mobileMenu.querySelectorAll(".mobile-nav-item");
+                navItems.forEach(function (item, idx) {
+                    setTimeout(function () {
+                        item.classList.remove("opacity-0", "translate-y-4");
+                        item.classList.add("opacity-100", "translate-y-0");
+                    }, idx * 70 + 100);
+                });
             }
 
             function closeMobileMenu() {
-                document.getElementById("mobile-menu").classList.remove("open");
-                document.getElementById("mobile-menu").setAttribute("aria-hidden", "true");
-                document.body.style.overflow = "";
-                document.getElementById("menu-btn").setAttribute("aria-expanded", "false");
-                document.getElementById("menu-btn").innerHTML = '<i class="fas fa-bars"></i>';
+                const mobileMenu = document.getElementById("mobile-menu");
+                if (!mobileMenu) return;
+
+                const navItems = mobileMenu.querySelectorAll(".mobile-nav-item");
+                navItems.forEach(function (item) {
+                    item.classList.add("opacity-0", "translate-y-4");
+                    item.classList.remove("opacity-100", "translate-y-0");
+                });
+
+                setTimeout(function () {
+                    mobileMenu.classList.add("pointer-events-none", "opacity-0");
+                    mobileMenu.classList.remove("pointer-events-auto", "opacity-100");
+                    document.body.style.overflow = "";
+                }, 200);
             }
 
             // ============ FORM ============
@@ -363,10 +494,10 @@
 
             function handleScroll() {
                 var y = window.scrollY || window.pageYOffset;
-                header.classList.toggle("scrolled", y > 40);
+                if (header) header.classList.toggle("scrolled", y > 40);
 
                 if (heroImg && y < window.innerHeight) {
-                    heroImg.style.transform = "translateY(" + (y * 0.35) + "px) scale(1.1)";
+                    heroImg.style.transform = "translateY(" + (y * 0.35) + "px)";
                 }
                 if (heroContent) {
                     heroContent.style.opacity = Math.max(1 - y / window.innerHeight, 0);
@@ -415,11 +546,11 @@
                     }
                 });
             }, { threshold: 0.3 });
-            statsObserver.observe(statsGrid);
+            if (statsGrid) statsObserver.observe(statsGrid);
 
             // ============ EVENT DELEGATION ============
             document.addEventListener("click", function (e) {
-                if (e.target.id === "mobile-menu") {
+                if (e.target.closest("#mobile-close-btn")) {
                     closeMobileMenu();
                     return;
                 }
@@ -462,21 +593,19 @@
 
                 var menuBtn = e.target.closest("#menu-btn");
                 if (menuBtn) {
-                    var isOpen = document.getElementById("mobile-menu").classList.contains("open");
-                    if (isOpen) closeMobileMenu();
-                    else openMobileMenu();
+                    openMobileMenu();
                     return;
                 }
 
                 var link = e.target.closest('a[href^="#"]');
                 if (link) {
-                    e.preventDefault();
                     var href = link.getAttribute("href");
                     closeMobileMenu();
                     if (href && href !== "#") {
                         try {
                             var target = document.querySelector(href);
                             if (target) {
+                                e.preventDefault();
                                 target.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth" });
                             }
                         } catch (err) { /* ignore */ }

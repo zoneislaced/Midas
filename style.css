@@ -1,5 +1,4 @@
-
-        :root {
+:root {
             --bg: #0a0a0a;
             --surface: #141414;
             --gold: #c9a227;
@@ -34,12 +33,20 @@
             margin-bottom: 1.25rem;
         }
 
+        /* 2. GOLD SHIMMER TEXT EFFECT */
+        @keyframes goldShimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+
         .gold-text {
-            background: linear-gradient(135deg, #e8c766 0%, #c9a227 45%, #9a7b1f 100%);
+            background: linear-gradient(90deg, #c9a227 0%, #e8c766 25%, #ffffff 50%, #e8c766 75%, #c9a227 100%);
+            background-size: 200% auto;
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
             color: transparent;
+            animation: goldShimmer 6s linear infinite;
         }
         .hero-glow { filter: drop-shadow(0 14px 60px rgba(201, 162, 39, 0.3)); }
 
@@ -139,6 +146,14 @@
         .gallery-item.gallery-show { opacity: 1; transform: translateY(0) scale(1); }
         .gallery-item.gallery-hidden { display: none; }
 
+        /* 1. SUBTLE PARALLAX / FLOATING HOVER ON GALLERY & FEATURED IMAGES */
+        .gallery-item img, #featured-grid article img {
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
+        }
+        .gallery-item:hover img, #featured-grid article:hover img {
+            transform: scale(1.06) rotate(0.5deg);
+        }
+
         #lightbox { opacity: 0; pointer-events: none; transition: opacity 0.4s ease; }
         #lightbox.open { opacity: 1; pointer-events: auto; }
 
@@ -152,8 +167,38 @@
         #preloader { transition: opacity 0.8s ease 0.2s, visibility 0s 1s; }
         #preloader.done { opacity: 0; visibility: hidden; }
 
+        /* 3. SMOOTH FLOATING PULSE FOR INTERACTIVE BADGES */
+        @keyframes softPulse {
+            0%, 100% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4); }
+            50% { transform: scale(1.08); opacity: 0.8; box-shadow: 0 0 0 8px rgba(74, 222, 128, 0); }
+        }
+
+        .animate-pulse {
+            animation: softPulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        /* 4. AMBIENT BACKGROUND GLOW SHIFT */
+        @keyframes ambientGlow {
+            0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.15; }
+            50% { transform: translate(30px, -20px) scale(1.1); opacity: 0.25; }
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(201,162,39,0.2) 0%, rgba(10,10,10,0) 70%);
+            pointer-events: none;
+            z-index: 1;
+            animation: ambientGlow 8s ease-in-out infinite;
+        }
+
         @media (prefers-reduced-motion: reduce) {
-            .marquee-track, .scroll-dot { animation: none; }
+            .marquee-track, .scroll-dot, .gold-text { animation: none; }
             .hero-anim { animation-duration: 0.01s; }
             .reveal { opacity: 1; transform: none; transition: none; }
             .gallery-item { transition: none; }
@@ -161,4 +206,3 @@
         @media (prefers-reduced-motion: no-preference) {
             html { scroll-behavior: smooth; }
         }
-    
