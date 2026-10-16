@@ -96,7 +96,6 @@
             const stats = [
                 { value: 1, suffix: "+", label: "Years of Practice" },
                 { value: 180, suffix: "+", label: "Projects Delivered" },
-                { value: 10, suffix: "", label: "International Awards" },
                 { value: 98, suffix: "%", label: "Client Satisfaction" }
             ];
 
@@ -124,9 +123,8 @@
 
             const socialLinks = [
                 { label: "Instagram", href: "https://www.instagram.com/midascreativegrp?exln=YzJkZjB3a3Ywd3Q2.", icon: "fab fa-instagram" },
-                { label: "Behance", href: "#", icon: "fab fa-behance" },
-                { label: "Pinterest", href: "#", icon: "fab fa-pinterest" },
-                { label: "Vimeo", href: "#", icon: "fab fa-vimeo-v" }
+                { label: "WhatsApp", href: "https://wa.me/254700000000", icon: "fab fa-whatsapp" },
+                { label: "Gmail", href: "mailto:hello@midas.photography", icon: "far fa-envelope" }
             ];
 
             // ============ HERO ROTATING BACKGROUND SETUP ============
