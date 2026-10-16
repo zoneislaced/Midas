@@ -204,11 +204,11 @@
             function renderFeatured(items) {
                 return items.map(function (item) {
                     return '<article class="group relative overflow-hidden rounded-xl h-[420px] md:h-full ' + item.span + '">' +
-                        '<img src="' + item.image + '" alt="' + item.title + ' — ' + item.category + ' photography" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105" />' +
+                        '<img src="' + item.image + '" alt="' + item.title + ' ' + item.category + ' photography" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105" />' +
                         '<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>' +
                         '<div class="absolute top-6 left-6 h-8 w-px bg-gold/60"></div>' +
                         '<div class="absolute bottom-0 left-0 right-0 p-7 md:p-8">' +
-                            '<p class="text-[11px] tracking-[0.3em] uppercase text-gold mb-2">' + item.category + ' · ' + item.year + '</p>' +
+                            '<p class="text-[11px] tracking-[0.3em] uppercase text-gold mb-2">' + item.category + ' ' + item.year + '</p>' +
                             '<h3 class="font-display text-2xl md:text-3xl text-white mb-2">' + item.title + '</h3>' +
                             '<p class="text-white/50 text-sm leading-relaxed max-w-md opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">' + item.description + '</p>' +
                         '</div>' +
@@ -227,7 +227,7 @@
             function renderGallery(items) {
                 return items.map(function (item, i) {
                     return '<article data-gallery-item data-category="' + item.category + '" data-index="' + i + '" class="gallery-item group relative overflow-hidden rounded-lg cursor-pointer" tabindex="0" role="button" aria-label="Open ' + item.title + ' in lightbox">' +
-                        '<img src="' + item.image + '" alt="' + item.title + ' — ' + item.category.toLowerCase() + ' photography" loading="lazy" class="w-full h-[420px] sm:h-[380px] object-cover transition-transform duration-700 group-hover:scale-110" />' +
+                        '<img src="' + item.image + '" alt="' + item.title + ' ' + item.category.toLowerCase() + ' photography" loading="lazy" class="w-full h-[420px] sm:h-[380px] object-cover transition-transform duration-700 group-hover:scale-110" />' +
                         '<div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-500"></div>' +
                         '<div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">' +
                             '<span class="h-12 w-12 rounded-full border border-gold text-gold flex items-center justify-center scale-75 group-hover:scale-100 transition-transform duration-500"><i class="fas fa-expand-alt text-sm"></i></span>' +
@@ -307,11 +307,26 @@
                     '</div>';
             }
 
-            // ============ STATE ============
-            var activeFilter = "All";
+            // ============ STATE & URL PARAMS ============
             var lightboxItems = [];
             var lightboxIndex = 0;
             var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+            function getFilterFromUrl() {
+                var params = new URLSearchParams(window.location.search);
+                var filter = params.get("filter");
+                return filter && galleryFilters.includes(filter) ? filter : "All";
+            }
+
+            function updateUrlFilter(cat) {
+                var url = new URL(window.location);
+                if (cat === "All") {
+                    url.searchParams.delete("filter");
+                } else {
+                    url.searchParams.set("filter", cat);
+                }
+                window.history.replaceState({}, "", url);
+            }
 
             // ============ MOUNT ============
             document.body.style.overflow = "hidden";
@@ -334,7 +349,8 @@
 
             initHeroSlideshow(galleryItems);
 
-            applyFilter("All", true);
+            var initialFilter = getFilterFromUrl();
+            applyFilter(initialFilter, true);
 
             // ============ PRELOADER ============
             function hidePreloader() {
@@ -349,7 +365,7 @@
 
             // ============ FILTER / GALLERY ============
             function applyFilter(cat, initial) {
-                activeFilter = cat;
+                updateUrlFilter(cat);
                 document.querySelectorAll(".filter-btn").forEach(function (btn) {
                     var isActive = btn.dataset.filter === cat;
                     btn.setAttribute("aria-pressed", String(isActive));
@@ -405,7 +421,7 @@
                 var item = lightboxItems[lightboxIndex];
                 document.getElementById("lightbox-img").src = item.full || item.image;
                 document.getElementById("lightbox-img").alt = item.title;
-                document.getElementById("lightbox-caption").textContent = item.title + " — " + item.category;
+                document.getElementById("lightbox-caption").textContent = item.title + " " + item.category;
                 document.getElementById("lightbox-counter").textContent =
                     String(lightboxIndex + 1).padStart(2, "0") + " / " + String(lightboxItems.length).padStart(2, "0");
             }
@@ -518,7 +534,7 @@
             });
 
             function animateCounter(el, target, suffix) {
-                var duration = 1800;
+                var duration = 3500; // Slower counter speed to eliminate jumpy UI behavior
                 var start = null;
                 function tick(now) {
                     if (!start) start = now;
