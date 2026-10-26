@@ -1,292 +1,328 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <base target="_self">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIDAS — Photography Studio</title>
-    <meta name="description" content="MIDAS is a fine-art photography studio crafting timeless portraits, landscapes and brand imagery. Every frame, touched with gold.">
-
-    <!-- FAVICON -->
-    <link rel="icon" type="image/png" href="https://github.com/zoneislaced/Midas/blob/main/midas%20logo.png?raw=true">
-
-    <!-- OPEN GRAPH / SOCIAL SHARING META TAGS -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://zoneislaced.github.io/Midas/">
-    <meta property="og:title" content="MIDAS — Photography Studio">
-    <meta property="og:description" content="MIDAS is a fine-art photography studio crafting timeless portraits, landscapes and brand imagery. Every frame, touched with gold.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/07e5bc37-7ae1-4ca4-a02c-7407541a6f7b_rw_600.jpg">
-
-    <!-- TWITTER CARD META TAGS -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="MIDAS — Photography Studio">
-    <meta name="twitter:description" content="MIDAS is a fine-art photography studio crafting timeless portraits, landscapes and brand imagery. Every frame, touched with gold.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/07e5bc37-7ae1-4ca4-a02c-7407541a6f7b_rw_600.jpg">
-
+    <title>Rafiki's Touch — Locs Repair & Professional Face Beats | London, UK</title>
+    <meta name="description" content="Rafiki's Touch by Stephany Kimani. Expert locs repair, starter locs, retwists, and professional makeup artistry in London, UK. Book walk-in or mobile home visit sessions today.">
+    
+    <!-- Tailwind CSS CDN with Rich Brown / Warm Peach Palette -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        gold: "#c9a227",
-                        goldlight: "#e8c766",
-                        ink: "#0a0a0a",
-                        coal: "#0d0d0d",
-                        smoke: "#141414",
-                        cream: "#f5f5f2"
+                        brand: {
+                            brown: '#3D2314',
+                            darkBrown: '#28160B',
+                            peach: '#D98A6C',
+                            peachHover: '#C47557',
+                            cream: '#FBF6F0',
+                            charcoal: '#261C18'
+                        }
                     },
                     fontFamily: {
-                        display: ["Playfair Display", "serif"],
-                        sans: ["Inter", "sans-serif"]
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif']
                     }
                 }
             }
-        };
+        }
     </script>
+
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 fill=%22%233D2314%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-size=%2216%22 fill=%22%23D98A6C%22 text-anchor=%22middle%22 font-family=%22sans-serif%22%3ERT%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-ink text-cream font-sans antialiased overflow-x-hidden">
+<body class="font-sans text-brand-charcoal bg-white antialiased">
 
-    <!-- PRELOADER -->
-    <div id="preloader" class="fixed inset-0 z-[100] bg-ink flex flex-col items-center justify-center" aria-hidden="true">
-        <div class="text-center flex flex-col items-center">
-            <div class="mb-4">
-                <img src="https://github.com/zoneislaced/Midas/blob/main/midas%20logo.png?raw=true" alt="MIDAS Logo" class="w-16 h-16 object-contain mix-blend-screen">
-            </div>
-            <p class="preloader-fade font-display text-5xl md:text-6xl tracking-[0.2em] text-white">MIDAS</p>
-            <div class="preloader-line mx-auto mt-6 h-px bg-gold max-w-[220px]"></div>
-            <p class="mt-6 text-[10px] tracking-[0.4em] uppercase text-white/40">Photography Studio</p>
-        </div>
-    </div>
-
-    <!-- HEADER -->
-    <header id="header" class="fixed top-0 left-0 right-0 z-50">
-        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-8 py-4 lg:py-5">
-            <a href="#hero" class="font-bold text-xl tracking-[0.25em] text-white group flex items-center gap-3" aria-label="MIDAS — back to top">
-                <img src="https://github.com/zoneislaced/Midas/blob/main/midas%20logo.png?raw=true" alt="MIDAS Logo" class="w-8 h-8 object-contain mix-blend-screen transition-transform duration-300 group-hover:scale-110">
-                <span>MIDAS</span>
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-brand-peach/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between py-3.5">
+            <a href="#home" class="text-2xl font-serif font-bold text-brand-brown tracking-wide">
+                Rafiki's <span class="text-brand-peach">Touch</span>
             </a>
-            <nav class="hidden md:block" aria-label="Main navigation">
-                <ul id="nav-list" class="flex items-center gap-8"></ul>
+            
+            <button id="menu-toggle" class="lg:hidden p-2 text-2xl text-brand-brown focus:outline-none" aria-label="Toggle Navigation Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="main-nav" class="hidden lg:flex lg:items-center lg:space-x-8">
+                <ul id="nav-list" class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8 text-base font-medium"></ul>
             </nav>
-            <div class="flex items-center gap-4">
-                <a href="#contact" class="hidden md:inline-flex btn-gold !py-3 !px-6 !text-[11px]">Book a Session</a>
-                <button id="menu-btn" class="md:hidden h-11 w-11 flex items-center justify-center rounded-md border border-white/15 text-white text-lg transition-colors hover:border-gold hover:text-gold" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+            
+            <a href="#book" class="hidden lg:inline-flex items-center gap-2 bg-brand-peach text-white px-6 py-2.5 rounded-full font-semibold shadow-md hover:bg-brand-peachHover transition duration-300">
+                <i class="fas fa-calendar-alt text-sm"></i> Book Session
+            </a>
         </div>
     </header>
 
-    <!-- MOBILE MENU -->
-    <div id="mobile-menu" class="fixed inset-0 z-[45] bg-ink/95 backdrop-blur-xl flex flex-col items-center justify-center gap-12 md:hidden" aria-hidden="true">
-        <a href="#hero" class="absolute top-8 left-8 font-bold text-xl tracking-[0.25em] text-white flex items-center gap-3">
-            <img src="https://github.com/zoneislaced/Midas/blob/main/midas%20logo.png?raw=true" alt="MIDAS Logo" class="w-8 h-8 object-contain mix-blend-screen">
-            <span>MIDAS</span>
-        </a>
-        <ul id="mobile-nav-list" class="flex flex-col items-center gap-8 text-center"></ul>
-        <div id="mobile-social" class="flex gap-4"></div>
-    </div>
-
-    <main>
-        <!-- HERO -->
-        <section id="hero" class="relative h-screen min-h-[640px] overflow-hidden flex items-center justify-center">
-            <div class="absolute inset-0 overflow-hidden">
-                <img id="hero-img" src="https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/07e5bc37-7ae1-4ca4-a02c-7407541a6f7b_rw_600.jpg" alt="MIDAS signature portrait photograph" class="w-full h-full object-cover" fetchpriority="high">
-                <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-[#0a0a0a]"></div>
-            </div>
-            <div id="hero-content" class="relative z-10 text-center px-6">
-                <p class="hero-anim text-[11px] md:text-sm tracking-[0.5em] uppercase text-gold mb-6" style="animation-delay:0.2s">Photography Studio Est. June 2025</p>
-                <h1 class="hero-anim hero-glow gold-text font-display text-7xl md:text-[9rem] lg:text-[11rem] font-medium tracking-[0.08em] leading-none" style="animation-delay:0.4s">MIDAS</h1>
-                <div class="hero-anim flex items-center justify-center gap-4 my-8" style="animation-delay:0.6s">
-                    <span class="h-px w-14 md:w-20 bg-gold/60"></span>
-                    <span class="text-white/60 text-xs md:text-sm tracking-[0.4em] uppercase font-light">THE GOLD TOUCH</span>
-                    <span class="h-px w-14 md:w-20 bg-gold/60"></span>
+    <main class="pt-16">
+        <!-- HERO SECTION -->
+        <section id="home" class="relative min-h-[90vh] flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://picsum.photos/1920/1080?random=1');">
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-brown/90 via-brand-brown/75 to-brand-darkBrown/85"></div>
+            <div class="relative z-10 max-w-5xl mx-auto px-6 py-20">
+                <span class="inline-block px-4 py-1.5 mb-6 text-xs sm:text-sm font-semibold tracking-wider text-brand-peach uppercase bg-brand-peach/10 border border-brand-peach/30 rounded-full">
+                    London's Premier Hair &amp; Makeup Artistry
+                </span>
+                <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-white leading-tight">
+                    Where Locs Find Strength<br>
+                    <span class="text-brand-peach italic font-normal">&amp; Faces Find Their Glow</span>
+                </h1>
+                <p class="text-lg sm:text-2xl text-white/85 mt-6 max-w-3xl mx-auto font-light leading-relaxed">
+                    Master Locs Maintenance, Custom Reconstruction &amp; Flawless Face Beats by Stephany Kimani.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10">
+                    <a href="#book" class="w-full sm:w-auto bg-brand-peach hover:bg-brand-peachHover text-white px-8 py-4 rounded-full font-semibold text-lg transition duration-300 shadow-lg hover:shadow-brand-peach/30">
+                        Book Studio Walk-In
+                    </a>
+                    <a href="#book" class="w-full sm:w-auto border-2 border-white/80 hover:border-white text-white hover:bg-white hover:text-brand-brown px-8 py-4 rounded-full font-semibold text-lg backdrop-blur-sm transition duration-300">
+                        Request Mobile Home Visit
+                    </a>
                 </div>
-                <div class="hero-anim" style="animation-delay:0.8s">
-                    <a href="#work" class="btn-outline">Explore the Work <i class="fas fa-arrow-down ml-3 text-gold"></i></a>
-                </div>
-            </div>
-            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-center" aria-hidden="true">
-                <div class="scroll-dot h-9 w-5 rounded-full border border-white/30 flex items-start justify-center pt-1.5 mx-auto">
-                    <div class="h-1.5 w-1 rounded-full bg-gold"></div>
-                </div>
-                <p class="text-[10px] tracking-[0.4em] uppercase text-white/40 mt-2"></p>
-            </div>
-        </section>
 
-        <!-- MARQUEE -->
-        <div class="marquee border-y border-white/5 bg-coal py-5 overflow-hidden" aria-hidden="true">
-            <div id="marquee-track" class="marquee-track flex whitespace-nowrap will-change-transform"></div>
-        </div>
-
-        <!-- FEATURED WORK -->
-        <section id="work" class="py-24 px-6 lg:px-8 scroll-mt-20">
-            <div class="max-w-7xl mx-auto">
-                <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 reveal">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-white/15 text-white/90">
                     <div>
-                        <p class="kicker">Featured Works</p>
-                        <h2 class="section-title">Signature Collections</h2>
+                        <p class="text-3xl font-bold text-brand-peach">10+ Years</p>
+                        <p class="text-xs uppercase tracking-wider text-white/70 mt-1">Experience</p>
                     </div>
-                    <a href="#portfolio" class="btn-outline !py-3 !px-6 !text-[11px] shrink-0">View All Work</a>
-                </div>
-                <div id="featured-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6 md:auto-rows-[280px]"></div>
-            </div>
-        </section>
-
-        <!-- PORTFOLIO -->
-        <section id="portfolio" class="py-24 px-6 lg:px-8 bg-coal scroll-mt-20">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-12 reveal">
-                    <p class="kicker">Portfolio</p>
-                    <h2 class="section-title">Selected Works</h2>
-                    <p class="text-white/50 max-w-xl mx-auto">Explore a curated selection of recent projects every image is shot, graded and finished by hand.</p>
-                </div>
-                <div id="filter-bar" class="flex flex-wrap justify-center gap-3 mb-14 reveal" role="group" aria-label="Gallery filters"></div>
-                <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
-            </div>
-        </section>
-
-        <!-- PHILOSOPHY QUOTE -->
-        <section class="py-28 px-6 lg:px-8 relative overflow-hidden">
-            <div class="absolute inset-0 pointer-events-none opacity-[0.04]" aria-hidden="true">
-                <p class="font-display text-[18rem] leading-none text-gold absolute -top-16 left-1/2 -translate-x-1/2 select-none">28</p>
-            </div>
-            <div class="max-w-4xl mx-auto text-center relative">
-                <p class="kicker reveal">Philosophy</p>
-                <blockquote class="reveal font-display text-2xl md:text-4xl lg:text-5xl leading-snug text-white/85">
-                    "Light does not belong to the photographer. <em class="italic text-gold">It belongs to the moment.</em>"
-                </blockquote>
-                <p class="reveal mt-8 text-xs tracking-[0.3em] uppercase text-white/40">Ted Leonard — Midas, Founder</p>
-            </div>
-        </section>
-
-        <!-- ABOUT + STATS -->
-        <section id="about" class="py-24 px-6 lg:px-8 bg-coal scroll-mt-20">
-            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 items-center">
-                <div class="relative reveal">
-                    <div class="absolute -top-4 -left-4 w-full h-full border border-gold/30 rounded-xl"></div>
-                    <img src="https://raw.githubusercontent.com/zoneislaced/Midas/refs/heads/main/Portraits/07e5bc37-7ae1-4ca4-a02c-7407541a6f7b_rw_600.jpg" alt="Midas, photographer portrait" loading="lazy" class="relative rounded-xl w-full h-[460px] md:h-[580px] object-cover">
-                    <div class="absolute bottom-6 -left-4 md:-left-6 bg-smoke border border-gold/20 rounded-xl px-6 py-4 shadow-2xl">
-                        <p class="font-display text-3xl text-gold">Est.</p>
-                        <p class="text-[10px] tracking-[0.3em] uppercase text-white/50 mt-1">June 2025</p>
+                    <div>
+                        <p class="text-3xl font-bold text-brand-peach">1,500+</p>
+                        <p class="text-xs uppercase tracking-wider text-white/70 mt-1">Clients Served</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-bold text-brand-peach">100%</p>
+                        <p class="text-xs uppercase tracking-wider text-white/70 mt-1">Natural Care</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-bold text-brand-peach">4.9 ★</p>
+                        <p class="text-xs uppercase tracking-wider text-white/70 mt-1">Client Rating</p>
                     </div>
                 </div>
-                <div class="reveal">
-                    <p class="kicker">The Artist</p>
-                    <h2 class="section-title">Every frame, <em class="italic text-gold">touched with gold.</em></h2>
-                    <p class="text-white/55 leading-relaxed mb-5">
-                        I'm Ted Leonard — a visual storyteller based in Nairobi, Kenya, working worldwide. Since founding the studio in June 2025, I have pursued the rare intersections where light, raw emotion, and precise composition align into something timeless.
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="py-24 bg-brand-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="font-serif text-4xl sm:text-5xl font-bold text-brand-brown">Our Craft &amp; Menu</h2>
+                    <p class="text-lg text-gray-600 mt-4">Personalized hair restoration and glam sessions tailored to your lifestyle.</p>
+                </div>
+
+                <!-- Service Category Filters -->
+                <div class="flex flex-wrap justify-center gap-3 mt-10" id="service-filters">
+                    <button class="filter-tab active px-6 py-2.5 rounded-full text-sm font-semibold border border-brand-brown/20 transition" data-category="all">All Craft</button>
+                    <button class="filter-tab bg-white text-brand-charcoal px-6 py-2.5 rounded-full text-sm font-semibold border border-brand-brown/20 transition hover:bg-brand-brown hover:text-white" data-category="locs">Locs Care</button>
+                    <button class="filter-tab bg-white text-brand-charcoal px-6 py-2.5 rounded-full text-sm font-semibold border border-brand-brown/20 transition hover:bg-brand-brown hover:text-white" data-category="makeup">Makeup Artistry</button>
+                    <button class="filter-tab bg-white text-brand-charcoal px-6 py-2.5 rounded-full text-sm font-semibold border border-brand-brown/20 transition hover:bg-brand-brown hover:text-white" data-category="packages">Combo Packages</button>
+                </div>
+
+                <!-- Services Grid -->
+                <div id="services-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"></div>
+            </div>
+        </section>
+
+        <!-- FEATURES / WHY US SECTION -->
+        <section id="features" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="font-serif text-4xl sm:text-5xl font-bold text-brand-brown">Why Rafiki's Touch?</h2>
+                    <p class="text-lg text-gray-600 mt-4">Elevating beauty through precision, organic products, and client convenience.</p>
+                </div>
+                <div id="features-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16"></div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-24 bg-brand-cream overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute -inset-4 bg-brand-peach/20 rounded-3xl transform -rotate-3"></div>
+                    <img src="https://picsum.photos/600/750?random=2" alt="Stephany Kimani, founder of Rafiki's Touch" class="relative rounded-3xl shadow-2xl object-cover w-full max-h-[550px]" loading="lazy">
+                </div>
+                <div class="lg:w-1/2">
+                    <span class="text-brand-peach font-semibold text-sm tracking-wider uppercase">Behind the Magic</span>
+                    <h2 class="font-serif text-4xl sm:text-5xl font-bold text-brand-brown mt-2">Meet <span class="text-brand-peach">Stephany Kimani</span></h2>
+                    <p class="text-lg text-gray-700 mt-6 leading-relaxed">
+                        Stephany Kimani is the visionary founder and lead artist at Rafiki's Touch. With over a decade of dedicated expertise in natural hair therapy and high-definition beauty, she specializes in locs repair, starter locs, palm-rolling, and bespoke makeup artistry across London.
                     </p>
-                    <p class="text-white/55 leading-relaxed mb-10">
-                        My practice spans editorial portraiture, landscape, architecture and documentary commissions. I believe photography is not about taking — it's about receiving. A great image is a gift earned by being truly present in the moment.
+                    <p class="text-lg text-gray-700 mt-4 leading-relaxed">
+                        Whether restoring thinning roots or crafting red-carpet glam, Stephany brings warmth, precision, and passion to every appointment.
                     </p>
-                    <div id="stats-grid" class="grid grid-cols-2 gap-y-10 gap-x-6 mb-10"></div>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#contact" class="btn-gold">Work With Me</a>
-                        <a href="#portfolio" class="btn-outline">See My Work</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICES -->
-        <section id="services" class="py-24 px-6 lg:px-8 scroll-mt-20">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-14 reveal">
-                    <p class="kicker">Services</p>
-                    <h2 class="section-title">What I Offer</h2>
-                    <p class="text-white/50 max-w-xl mx-auto">Tailored photography services for individuals, brands and collectors.</p>
-                </div>
-                <div id="services-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
-            </div>
-        </section>
-
-        <!-- TESTIMONIALS -->
-        <section id="testimonials" class="py-24 px-6 lg:px-8 bg-coal scroll-mt-20">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-14 reveal">
-                    <p class="kicker">Kind Words</p>
-                    <h2 class="section-title">What Clients Say</h2>
-                </div>
-                <div id="testimonials-grid" class="grid md:grid-cols-3 gap-6"></div>
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact" class="py-24 px-6 lg:px-8 scroll-mt-20">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-14 reveal">
-                    <p class="kicker">Contact</p>
-                    <h2 class="section-title">Let's Create Something <span class="gold-text">Timeless</span></h2>
-                    <p class="text-white/50 max-w-xl mx-auto">Whether it's a personal portrait, a brand campaign or a fine-art commission — I'd love to hear your story.</p>
-                </div>
-                <div class="grid lg:grid-cols-2 gap-12 items-start">
-                    <div class="reveal">
-                        <h3 class="font-display text-2xl text-white mb-4">Get in touch</h3>
-                        <p class="text-white/50 mb-8">Based in Nairobi, Kenya, available for assignments worldwide.</p>
-                        <a href="mailto:hello@midas.photography" class="block text-xl md:text-2xl font-light text-white hover:text-gold transition-colors mb-8">hello@midas.photography</a>
-                        <div id="social-links" class="flex gap-3"></div>
-                    </div>
-                    <form id="contact-form" class="space-y-5 reveal" novalidate>
-                        <div class="grid sm:grid-cols-2 gap-5">
-                            <input type="text" name="name" placeholder="Your name" class="input" aria-label="Your name" required>
-                            <input type="email" name="email" placeholder="Email address" class="input" aria-label="Email address" required>
+                    
+                    <div class="grid grid-cols-2 gap-4 mt-8 pt-8 border-t border-brand-brown/10">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-award text-2xl text-brand-peach"></i>
+                            <span class="font-medium text-gray-900">Certified Professional</span>
                         </div>
-                        <select name="service" class="input" aria-label="Select a service">
-                            <option value="" disabled selected>Select a service</option>
-                            <option>Food and Beverages</option>
-                            <option>Real Estate / Spaces</option>
-                            <option>Portraits</option>
-                            <option>Products</option>
-                            <option>Events</option>
-                            <option>Other</option>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-sparkles text-2xl text-brand-peach"></i>
+                            <span class="font-medium text-gray-900">Custom Formulations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section id="testimonials" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="font-serif text-4xl sm:text-5xl font-bold text-brand-brown">Kind Words</h2>
+                    <p class="text-lg text-gray-600 mt-4">Real stories from our valued studio and mobile home visit clients.</p>
+                </div>
+                <div id="testimonials-grid" class="grid md:grid-cols-3 gap-8 mt-16"></div>
+            </div>
+        </section>
+
+        <!-- BOOKING & CALCULATOR SECTION -->
+        <section id="book" class="py-24 bg-brand-brown text-white relative">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6">
+                <div class="text-center">
+                    <h2 class="font-serif text-4xl sm:text-5xl font-bold">Book Your Session</h2>
+                    <p class="text-xl text-white/80 mt-4">Select your service, choose a slot, and calculate your estimated cost instantly in GBP (£).</p>
+                </div>
+
+                <!-- Visit Type Toggle -->
+                <div id="booking-type-toggle" class="flex justify-center gap-4 mt-10" role="group" aria-label="Visit Type">
+                    <button class="toggle-btn active" data-type="walkin">
+                        <i class="fas fa-store-alt"></i> London Studio
+                    </button>
+                    <button class="toggle-btn" data-type="homevisit">
+                        <i class="fas fa-home"></i> Mobile Home Visit (+£15)
+                    </button>
+                </div>
+
+                <form id="booking-form" class="mt-10 bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/15 space-y-6">
+                    <input type="hidden" id="visit-type" value="walkin">
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="booking-name" class="block text-sm font-medium text-white/90 mb-2">Full Name</label>
+                            <input id="booking-name" type="text" placeholder="Jane Doe" required
+                                   class="w-full px-5 py-3.5 rounded-xl border-0 bg-white/10 text-white placeholder-white/50 focus:ring-2 focus:ring-brand-peach focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="booking-phone" class="block text-sm font-medium text-white/90 mb-2">Phone / WhatsApp</label>
+                            <input id="booking-phone" type="tel" placeholder="+44 700 000 0000" required
+                                   class="w-full px-5 py-3.5 rounded-xl border-0 bg-white/10 text-white placeholder-white/50 focus:ring-2 focus:ring-brand-peach focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="service-options" class="block text-sm font-medium text-white/90 mb-2">Select Service</label>
+                        <select id="service-options" required
+                                class="w-full px-5 py-3.5 rounded-xl border-0 bg-brand-darkBrown text-white focus:ring-2 focus:ring-brand-peach focus:outline-none">
+                            <option value="" disabled selected>Choose a service...</option>
                         </select>
-                        <textarea name="message" rows="5" placeholder="Tell me about your project..." class="input" aria-label="Project details"></textarea>
-                        <div class="flex flex-wrap items-center justify-between gap-4">
-                            <span class="text-[11px] text-white/30">Your details are kept private. No spam — promise.</span>
-                            <button type="submit" id="submit-btn" class="btn-gold">Send Message <i class="fas fa-arrow-right ml-2"></i></button>
+                    </div>
+
+                    <!-- Date & Interactive Time Slot Selector -->
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="booking-date" class="block text-sm font-medium text-white/90 mb-2">Preferred Date</label>
+                            <input id="booking-date" type="date" required
+                                   class="w-full px-5 py-3.5 rounded-xl border-0 bg-white/10 text-white focus:ring-2 focus:ring-brand-peach focus:outline-none [color-scheme:dark]">
                         </div>
-                        <p id="form-status" class="hidden text-sm text-center rounded-lg border px-4 py-3" role="status" aria-live="polite"></p>
-                    </form>
-                </div>
+                        <div>
+                            <label class="block text-sm font-medium text-white/90 mb-2">Available Slots</label>
+                            <div id="time-slots" class="grid grid-cols-3 gap-2">
+                                <button type="button" class="time-slot px-3 py-2 rounded-lg border border-white/20 text-xs font-semibold hover:border-brand-peach" data-time="09:00 AM">09:00 AM</button>
+                                <button type="button" class="time-slot px-3 py-2 rounded-lg border border-white/20 text-xs font-semibold hover:border-brand-peach" data-time="11:30 AM">11:30 AM</button>
+                                <button type="button" class="time-slot px-3 py-2 rounded-lg border border-white/20 text-xs font-semibold hover:border-brand-peach" data-time="02:00 PM">02:00 PM</button>
+                                <button type="button" class="time-slot px-3 py-2 rounded-lg border border-white/20 text-xs font-semibold hover:border-brand-peach" data-time="04:30 PM">04:30 PM</button>
+                                <button type="button" class="time-slot px-3 py-2 rounded-lg border border-white/20 text-xs font-semibold hover:border-brand-peach" data-time="06:00 PM">06:00 PM</button>
+                            </div>
+                            <input type="hidden" id="selected-time" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="booking-notes" class="block text-sm font-medium text-white/90 mb-2">Notes or Special Requests</label>
+                        <textarea id="booking-notes" placeholder="Describe hair length, specific makeup style, or postcode details..."
+                                  class="w-full px-5 py-3.5 rounded-xl border-0 bg-white/10 text-white placeholder-white/50 focus:ring-2 focus:ring-brand-peach focus:outline-none" rows="3"></textarea>
+                    </div>
+
+                    <!-- Dynamic Cost & Time Estimator Banner -->
+                    <div id="estimate-banner" class="bg-white/15 p-5 rounded-2xl flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+                        <div>
+                            <p class="text-xs uppercase tracking-wider text-white/70">Estimated Cost &amp; Duration</p>
+                            <p class="text-2xl font-bold text-brand-peach mt-0.5" id="estimate-price">Select a service</p>
+                            <p class="text-xs text-white/80" id="estimate-duration">Est. Duration: --</p>
+                        </div>
+                        <span class="text-xs bg-brand-peach/20 text-brand-peach px-3 py-1.5 rounded-full font-medium border border-brand-peach/40">
+                            Instant Confirmation
+                        </span>
+                    </div>
+
+                    <button type="submit" class="w-full bg-brand-peach text-white font-bold text-lg py-4 rounded-xl hover:bg-brand-peachHover transition duration-300 flex items-center justify-center gap-2 shadow-lg">
+                        <i class="fas fa-calendar-check"></i> Confirm Booking Request
+                    </button>
+                </form>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="border-t border-white/5 py-12 px-6 lg:px-8 bg-coal">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-            <a href="#hero" class="font-bold text-xl tracking-[0.25em] text-white flex items-center gap-3">
-                <img src="https://github.com/zoneislaced/Midas/blob/main/midas%20logo.png?raw=true" alt="MIDAS Logo" class="w-8 h-8 object-contain mix-blend-screen">
-                <span>MIDAS</span>
-            </a>
-            <nav aria-label="Footer navigation">
-                <ul id="footer-links" class="flex flex-wrap justify-center gap-6 md:gap-8"></ul>
-            </nav>
-            <div id="footer-social" class="flex gap-3"></div>
+    <!-- CONFIRMATION MODAL -->
+    <div id="booking-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl max-w-md w-full p-8 text-center shadow-2xl transform transition-all scale-95 opacity-0" id="modal-content">
+            <div class="w-16 h-16 bg-brand-peach/20 text-brand-peach rounded-full flex items-center justify-center mx-auto text-3xl mb-4">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-brand-brown" id="modal-title">Booking Received!</h3>
+            <p class="text-gray-600 mt-2 text-sm leading-relaxed" id="modal-description"></p>
+            <div class="bg-brand-cream p-4 rounded-xl mt-6 text-left space-y-2 text-xs text-gray-700">
+                <p><strong>Client:</strong> <span id="summary-name"></span></p>
+                <p><strong>Service:</strong> <span id="summary-service"></span></p>
+                <p><strong>Type:</strong> <span id="summary-type"></span></p>
+                <p><strong>Date &amp; Time:</strong> <span id="summary-datetime"></span></p>
+                <p><strong>Total Estimate:</strong> <span id="summary-total" class="text-brand-brown font-bold"></span></p>
+            </div>
+            <button id="close-modal" class="mt-6 w-full bg-brand-brown text-white font-semibold py-3 rounded-xl hover:bg-brand-darkBrown transition">
+                Close &amp; Return
+            </button>
         </div>
-        <div class="max-w-7xl mx-auto mt-10 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p class="text-xs text-white/30">© <span id="year"></span> Midas Photography Studio. All rights reserved.</p>
-            <p class="text-xs text-white/30 tracking-[0.2em]">Crafted by Lumen Labzz <i class="fas fa-heart text-gold mx-1"></i> Nairobi, Kenya</p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-darkBrown text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <h3 class="font-serif text-3xl font-bold">Rafiki's <span class="text-brand-peach">Touch</span></h3>
+                    <p class="text-sm mt-4 text-white/70 leading-relaxed">Locs repaired. Faces beat. Confidence restored. Expert hair and beauty services in London, UK.</p>
+                    <div class="flex gap-4 mt-6 text-xl">
+                        <a href="https://lumenlabshq.com" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-peach hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="https://lumenlabshq.com" target="_blank" rel="noopener" aria-label="TikTok" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-peach hover:text-white transition"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://lumenlabshq.com" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-peach hover:text-white transition"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div id="footer-links" class="md:col-span-3 grid sm:grid-cols-3 gap-8"></div>
+            </div>
+            <hr class="border-white/15 mt-12">
+            <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-white/60 mt-8 gap-4">
+                <p>&copy; 2026 Rafiki's Touch. Made by <a href="https://lumenlabshq.com" target="_blank" rel="noopener" class="underline hover:text-brand-peach font-semibold">Lumen Labzz</a> (London, UK).</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <a href="#" class="hover:underline">Terms of Service</a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- LIGHTBOX -->
-    <div id="lightbox" class="fixed inset-0 z-[70] bg-black/95 backdrop-blur-md flex items-center justify-center" role="dialog" aria-modal="true" aria-label="Image lightbox">
-        <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-[88vw] object-contain rounded-lg shadow-2xl">
-        <p id="lightbox-counter" class="absolute top-8 left-8 text-gold text-sm tracking-[0.3em]"></p>
-        <p id="lightbox-caption" class="absolute bottom-8 left-0 right-0 text-center text-white/70 text-sm tracking-[0.15em] px-6"></p>
-        <button data-lightbox-control="close" class="absolute top-6 right-6 h-12 w-12 rounded-full border border-white/20 text-white/70 hover:border-gold hover:text-gold transition-colors text-2xl leading-none" aria-label="Close lightbox">&times;</button>
-        <button data-lightbox-control="prev" class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full border border-white/20 text-white/70 hover:border-gold hover:text-gold transition-colors text-2xl leading-none" aria-label="Previous image">&#8249;</button>
-        <button data-lightbox-control="next" class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full border border-white/20 text-white/70 hover:border-gold hover:text-gold transition-colors text-2xl leading-none" aria-label="Next image">&#8250;</button>
-    </div>
-
+    <!-- External Script -->
     <script src="script.js"></script>
 </body>
 </html>
